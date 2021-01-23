@@ -8,7 +8,8 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
-
+public-key.tf
+/Private-key/*
 # Crash log files
 crash.log
 
