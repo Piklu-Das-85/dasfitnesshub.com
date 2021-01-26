@@ -1,6 +1,6 @@
 # Create Application Load Balancer Security Group
 
-resource "aws_security_group" "dfsc" {
+resource "aws_security_group" "dfsc_alb_sg" {
     vpc_id = aws_vpc.dfsc_vpc.id 
     egress  {
         cidr_blocks = ["0.0.0.0/0" ]
