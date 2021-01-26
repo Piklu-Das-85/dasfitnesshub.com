@@ -5,7 +5,7 @@ resource "aws_lb_listener" "dfsc_https" {
   port = 443 
   protocol = "HTTPS"
   ssl_policy = "ELBSecurityPolicy-TLS-1-0-2015-04"
-  certificate_arn = "arn:aws:acm:us-east-1:015148330366:certificate/17eacedc-d24c-4ad1-af0d-7eca4a46c301"
+  certificate_arn = "arn:aws:acm:eu-west-1:015148330366:certificate/0a732702-57a4-4adf-8f08-49942107147b"
   default_action {
     type = "forward"
     target_group_arn = aws_lb_target_group.dfsc-front-end-tg.arn
