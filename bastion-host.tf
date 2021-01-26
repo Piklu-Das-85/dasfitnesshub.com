@@ -1,5 +1,11 @@
 resource "aws_security_group" "dfsc_bastion_sg" {
   vpc_id = aws_vpc.dfsc_vpc.id
+  egress  {
+        cidr_blocks = ["0.0.0.0/0" ]
+        from_port = 0
+        protocol = "-1"
+        to_port = 0
+    }
   ingress   {
     cidr_blocks = [ "0.0.0.0/0" ]
     description = "value"
